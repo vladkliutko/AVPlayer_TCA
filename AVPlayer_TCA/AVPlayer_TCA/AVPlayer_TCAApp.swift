@@ -20,7 +20,7 @@ struct AVPlayer_TCAApp: App {
                         playbackControlButtonsState: PlaybackControlButtons.State()
                     )
                 ) {
-                    BookKeyPoints()
+                    BookKeyPoints()._printChanges()
                 }
             )
             .preferredColorScheme(.light) // In order to reduce the amount of work

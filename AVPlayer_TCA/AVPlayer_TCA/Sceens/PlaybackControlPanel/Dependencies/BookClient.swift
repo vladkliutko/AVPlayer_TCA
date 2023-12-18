@@ -23,9 +23,9 @@ extension BookClient: DependencyKey {
         try await Task.sleep(nanoseconds: 2 * 1_000_000_000)
 
         // Simulate an error condition
-        if Bool.random() {
-            throw BookClientError.canFetchData
-        }
+//        if Bool.random() {
+//            throw BookClientError.canFetchData
+//        }
 
         return TestData.book
     }

@@ -122,7 +122,11 @@ struct BookKeyPoints {
                 let currentKeyPointAudioURL = currentKeyPoint.audioURL
                 audioClient.setCurrentItemURL(currentKeyPointAudioURL)
 
-                return .send(.updateCurrentTime(currentTime: .zero))
+                return .send(.updateCurrentTime(currentTime: .zero)).concatenate(
+                    with: .publisher {
+                        audioClient.currentTimeIntervalPublisher.map { .updateCurrentTime(currentTime: $0) }
+                    }
+                )
 
             case .audioItemDurationDidUpdate(let duration):
                 // Update rate button
@@ -142,7 +146,7 @@ struct BookKeyPoints {
                 state.timelineState.currentTimelineLabel = formatter.formatTimeIntervalToTime(currentTimeInterval)
 
                 // Automatic playback of the next item
-                if timeInterval != .zero, round(timeInterval) >= round(state.timelineState.maxTimeInterval) {
+                if timeInterval != .zero, floor(timeInterval) >= floor(state.timelineState.maxTimeInterval) {
                     if state.bookInfo.currentKeyPointIsLast {
                         // Here should be a summary
                     } else {
@@ -182,9 +186,7 @@ struct BookKeyPoints {
                         audioClient.pause()
                     }
 
-                    return .publisher {
-                        audioClient.currentTimeIntervalPublisher.map { .updateCurrentTime(currentTime: $0) }
-                    }
+                    return .none
 
                 case .forwardButtonTapped:
                     audioClient.forward(seconds: 10)
