@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A4BFD442B2C34B300A8807E /* AVPlayer_TCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4BFD432B2C34B300A8807E /* AVPlayer_TCAApp.swift */; };
+		7A4BFD462B2C34B300A8807E /* BookKeyPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4BFD452B2C34B300A8807E /* BookKeyPoints.swift */; };
+		7A4BFD482B2C34B300A8807E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A4BFD472B2C34B300A8807E /* Assets.xcassets */; };
+		7A4BFD4B2B2C34B300A8807E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A4BFD4A2B2C34B300A8807E /* Preview Assets.xcassets */; };
+		7A4BFD552B2C34B300A8807E /* AVPlayer_TCATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4BFD542B2C34B300A8807E /* AVPlayer_TCATests.swift */; };
+		7A4BFD6F2B2C386F00A8807E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 7A4BFD6E2B2C386F00A8807E /* ComposableArchitecture */; };
+		7A938C632B2F700900C4E538 /* BookClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A938C622B2F700900C4E538 /* BookClient.swift */; };
+		7A938C652B2FC6E000C4E538 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A938C642B2FC6E000C4E538 /* ColorPalette.swift */; };
+		7AAF8EC32B2FD42300A90C72 /* AnimatedToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAF8EC22B2FD42300A90C72 /* AnimatedToggle.swift */; };
+		7AD378B12B2CA9BA00523044 /* IconButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD378B02B2CA9BA00523044 /* IconButtonView.swift */; };
+		7AD378B32B2CA9D200523044 /* PlaybackSwitchButonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD378B22B2CA9D200523044 /* PlaybackSwitchButonView.swift */; };
+		7AD378B52B2CA9ED00523044 /* PressEffectButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD378B42B2CA9ED00523044 /* PressEffectButtonStyle.swift */; };
+		7AD378B92B2CE58100523044 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD378B82B2CE58100523044 /* SliderView.swift */; };
+		7AD378BD2B2D9AFB00523044 /* PlaybackTimelineControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD378BC2B2D9AFB00523044 /* PlaybackTimelineControlView.swift */; };
+		7AD378BF2B2DA85C00523044 /* TimeInterval+formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD378BE2B2DA85C00523044 /* TimeInterval+formatter.swift */; };
+		7AD378C22B2DD2D700523044 /* SpeedRateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD378C12B2DD2D700523044 /* SpeedRateProvider.swift */; };
+		7AD378C42B2DD32A00523044 /* LoopedSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD378C32B2DD32A00523044 /* LoopedSequence.swift */; };
+		7AD378C92B2DDC3E00523044 /* PlaybackTimelineControlFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD378C82B2DDC3E00523044 /* PlaybackTimelineControlFormatter.swift */; };
+		7AD378CD2B2DE4C300523044 /* PlaybackControlButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD378CC2B2DE4C300523044 /* PlaybackControlButtons.swift */; };
+		7AD378CF2B2DE77F00523044 /* BookKeyPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD378CE2B2DE77F00523044 /* BookKeyPointsView.swift */; };
+		7AD378D12B2DEA4400523044 /* PlaybackTimelineControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD378D02B2DEA4400523044 /* PlaybackTimelineControl.swift */; };
+		7AD378D32B2DF46100523044 /* PlaybackControlButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD378D22B2DF46100523044 /* PlaybackControlButtonsView.swift */; };
+		7AD378D52B2E204C00523044 /* BookInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD378D42B2E204C00523044 /* BookInfo.swift */; };
+		7AD378D82B2E286000523044 /* BookInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD378D72B2E286000523044 /* BookInfoModel.swift */; };
+		7AD378E02B2F1B4500523044 /* AudioPlayerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD378DF2B2F1B4500523044 /* AudioPlayerProvider.swift */; };
+		7AD378E22B2F262600523044 /* AudioSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD378E12B2F262600523044 /* AudioSessionManager.swift */; };
+		7AD378E52B2F557200523044 /* KeyPointAudioClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD378E42B2F557200523044 /* KeyPointAudioClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A4BFD512B2C34B300A8807E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A4BFD382B2C34B200A8807E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A4BFD3F2B2C34B200A8807E;
+			remoteInfo = AVPlayer_TCA;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7A4BFD402B2C34B300A8807E /* AVPlayer_TCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVPlayer_TCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A4BFD432B2C34B300A8807E /* AVPlayer_TCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayer_TCAApp.swift; sourceTree = "<group>"; };
+		7A4BFD452B2C34B300A8807E /* BookKeyPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookKeyPoints.swift; sourceTree = "<group>"; };
+		7A4BFD472B2C34B300A8807E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A4BFD4A2B2C34B300A8807E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7A4BFD502B2C34B300A8807E /* AVPlayer_TCATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVPlayer_TCATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A4BFD542B2C34B300A8807E /* AVPlayer_TCATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayer_TCATests.swift; sourceTree = "<group>"; };
+		7A938C622B2F700900C4E538 /* BookClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookClient.swift; sourceTree = "<group>"; };
+		7A938C642B2FC6E000C4E538 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		7AAF8EC22B2FD42300A90C72 /* AnimatedToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedToggle.swift; sourceTree = "<group>"; };
+		7AD378B02B2CA9BA00523044 /* IconButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButtonView.swift; sourceTree = "<group>"; };
+		7AD378B22B2CA9D200523044 /* PlaybackSwitchButonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackSwitchButonView.swift; sourceTree = "<group>"; };
+		7AD378B42B2CA9ED00523044 /* PressEffectButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressEffectButtonStyle.swift; sourceTree = "<group>"; };
+		7AD378B82B2CE58100523044 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		7AD378BC2B2D9AFB00523044 /* PlaybackTimelineControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackTimelineControlView.swift; sourceTree = "<group>"; };
+		7AD378BE2B2DA85C00523044 /* TimeInterval+formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+formatter.swift"; sourceTree = "<group>"; };
+		7AD378C12B2DD2D700523044 /* SpeedRateProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedRateProvider.swift; sourceTree = "<group>"; };
+		7AD378C32B2DD32A00523044 /* LoopedSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopedSequence.swift; sourceTree = "<group>"; };
+		7AD378C82B2DDC3E00523044 /* PlaybackTimelineControlFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackTimelineControlFormatter.swift; sourceTree = "<group>"; };
+		7AD378CC2B2DE4C300523044 /* PlaybackControlButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackControlButtons.swift; sourceTree = "<group>"; };
+		7AD378CE2B2DE77F00523044 /* BookKeyPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookKeyPointsView.swift; sourceTree = "<group>"; };
+		7AD378D02B2DEA4400523044 /* PlaybackTimelineControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackTimelineControl.swift; sourceTree = "<group>"; };
+		7AD378D22B2DF46100523044 /* PlaybackControlButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackControlButtonsView.swift; sourceTree = "<group>"; };
+		7AD378D42B2E204C00523044 /* BookInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfo.swift; sourceTree = "<group>"; };
+		7AD378D72B2E286000523044 /* BookInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoModel.swift; sourceTree = "<group>"; };
+		7AD378DE2B2F14EE00523044 /* AVPlayer-TCA-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AVPlayer-TCA-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7AD378DF2B2F1B4500523044 /* AudioPlayerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerProvider.swift; sourceTree = "<group>"; };
+		7AD378E12B2F262600523044 /* AudioSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionManager.swift; sourceTree = "<group>"; };
+		7AD378E42B2F557200523044 /* KeyPointAudioClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPointAudioClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A4BFD3D2B2C34B200A8807E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A4BFD6F2B2C386F00A8807E /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A4BFD4D2B2C34B300A8807E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A4BFD372B2C34B200A8807E = {
+			isa = PBXGroup;
+			children = (
+				7A4BFD422B2C34B300A8807E /* AVPlayer_TCA */,
+				7A4BFD532B2C34B300A8807E /* AVPlayer_TCATests */,
+				7A4BFD412B2C34B300A8807E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A4BFD412B2C34B300A8807E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A4BFD402B2C34B300A8807E /* AVPlayer_TCA.app */,
+				7A4BFD502B2C34B300A8807E /* AVPlayer_TCATests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A4BFD422B2C34B300A8807E /* AVPlayer_TCA */ = {
+			isa = PBXGroup;
+			children = (
+				7AD378DE2B2F14EE00523044 /* AVPlayer-TCA-Info.plist */,
+				7A4BFD432B2C34B300A8807E /* AVPlayer_TCAApp.swift */,
+				7AD378AC2B2C8BB200523044 /* Sceens */,
+				7AD378BA2B2CE89C00523044 /* ViewComponents */,
+				7AD378C52B2DD3B400523044 /* Utilities */,
+				7AD378D62B2E285500523044 /* Model */,
+				7AD378C62B2DD3C000523044 /* Extensions */,
+				7A4BFD472B2C34B300A8807E /* Assets.xcassets */,
+				7A4BFD492B2C34B300A8807E /* Preview Content */,
+			);
+			path = AVPlayer_TCA;
+			sourceTree = "<group>";
+		};
+		7A4BFD492B2C34B300A8807E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7A4BFD4A2B2C34B300A8807E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7A4BFD532B2C34B300A8807E /* AVPlayer_TCATests */ = {
+			isa = PBXGroup;
+			children = (
+				7A4BFD542B2C34B300A8807E /* AVPlayer_TCATests.swift */,
+			);
+			path = AVPlayer_TCATests;
+			sourceTree = "<group>";
+		};
+		7AD378AC2B2C8BB200523044 /* Sceens */ = {
+			isa = PBXGroup;
+			children = (
+				7AD378BB2B2CF6AF00523044 /* PlaybackControlPanel */,
+			);
+			path = Sceens;
+			sourceTree = "<group>";
+		};
+		7AD378AD2B2C8BBE00523044 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7AD378C02B2DA87F00523044 /* PlaybackTimeline */,
+				7AD378CB2B2DE47700523044 /* PlaybackControlButtons */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7AD378BA2B2CE89C00523044 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				7AD378D92B2E28EE00523044 /* Stylers */,
+				7AD378B02B2CA9BA00523044 /* IconButtonView.swift */,
+				7AD378B82B2CE58100523044 /* SliderView.swift */,
+				7AAF8EC22B2FD42300A90C72 /* AnimatedToggle.swift */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		7AD378BB2B2CF6AF00523044 /* PlaybackControlPanel */ = {
+			isa = PBXGroup;
+			children = (
+				7AD378D42B2E204C00523044 /* BookInfo.swift */,
+				7AD378C72B2DD3E500523044 /* Dependencies */,
+				7AD378CA2B2DE12100523044 /* Formatters */,
+				7AD378AD2B2C8BBE00523044 /* Views */,
+				7A4BFD452B2C34B300A8807E /* BookKeyPoints.swift */,
+				7AD378CE2B2DE77F00523044 /* BookKeyPointsView.swift */,
+			);
+			path = PlaybackControlPanel;
+			sourceTree = "<group>";
+		};
+		7AD378C02B2DA87F00523044 /* PlaybackTimeline */ = {
+			isa = PBXGroup;
+			children = (
+				7AD378D02B2DEA4400523044 /* PlaybackTimelineControl.swift */,
+				7AD378BC2B2D9AFB00523044 /* PlaybackTimelineControlView.swift */,
+			);
+			name = PlaybackTimeline;
+			sourceTree = "<group>";
+		};
+		7AD378C52B2DD3B400523044 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7A938C642B2FC6E000C4E538 /* ColorPalette.swift */,
+				7AD378E32B2F265000523044 /* Audio */,
+				7AD378C32B2DD32A00523044 /* LoopedSequence.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7AD378C62B2DD3C000523044 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7AD378BE2B2DA85C00523044 /* TimeInterval+formatter.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7AD378C72B2DD3E500523044 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				7AD378C12B2DD2D700523044 /* SpeedRateProvider.swift */,
+				7AD378E42B2F557200523044 /* KeyPointAudioClient.swift */,
+				7A938C622B2F700900C4E538 /* BookClient.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		7AD378CA2B2DE12100523044 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				7AD378C82B2DDC3E00523044 /* PlaybackTimelineControlFormatter.swift */,
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
+		7AD378CB2B2DE47700523044 /* PlaybackControlButtons */ = {
+			isa = PBXGroup;
+			children = (
+				7AD378CC2B2DE4C300523044 /* PlaybackControlButtons.swift */,
+				7AD378D22B2DF46100523044 /* PlaybackControlButtonsView.swift */,
+				7AD378B22B2CA9D200523044 /* PlaybackSwitchButonView.swift */,
+			);
+			path = PlaybackControlButtons;
+			sourceTree = "<group>";
+		};
+		7AD378D62B2E285500523044 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7AD378D72B2E286000523044 /* BookInfoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7AD378D92B2E28EE00523044 /* Stylers */ = {
+			isa = PBXGroup;
+			children = (
+				7AD378B42B2CA9ED00523044 /* PressEffectButtonStyle.swift */,
+			);
+			path = Stylers;
+			sourceTree = "<group>";
+		};
+		7AD378E32B2F265000523044 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				7AD378DF2B2F1B4500523044 /* AudioPlayerProvider.swift */,
+				7AD378E12B2F262600523044 /* AudioSessionManager.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A4BFD3F2B2C34B200A8807E /* AVPlayer_TCA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A4BFD642B2C34B300A8807E /* Build configuration list for PBXNativeTarget "AVPlayer_TCA" */;
+			buildPhases = (
+				7A4BFD3C2B2C34B200A8807E /* Sources */,
+				7A4BFD3D2B2C34B200A8807E /* Frameworks */,
+				7A4BFD3E2B2C34B200A8807E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AVPlayer_TCA;
+			packageProductDependencies = (
+				7A4BFD6E2B2C386F00A8807E /* ComposableArchitecture */,
+			);
+			productName = AVPlayer_TCA;
+			productReference = 7A4BFD402B2C34B300A8807E /* AVPlayer_TCA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A4BFD4F2B2C34B300A8807E /* AVPlayer_TCATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A4BFD672B2C34B300A8807E /* Build configuration list for PBXNativeTarget "AVPlayer_TCATests" */;
+			buildPhases = (
+				7A4BFD4C2B2C34B300A8807E /* Sources */,
+				7A4BFD4D2B2C34B300A8807E /* Frameworks */,
+				7A4BFD4E2B2C34B300A8807E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A4BFD522B2C34B300A8807E /* PBXTargetDependency */,
+			);
+			name = AVPlayer_TCATests;
+			productName = AVPlayer_TCATests;
+			productReference = 7A4BFD502B2C34B300A8807E /* AVPlayer_TCATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A4BFD382B2C34B200A8807E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					7A4BFD3F2B2C34B200A8807E = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					7A4BFD4F2B2C34B300A8807E = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 7A4BFD3F2B2C34B200A8807E;
+					};
+				};
+			};
+			buildConfigurationList = 7A4BFD3B2B2C34B200A8807E /* Build configuration list for PBXProject "AVPlayer_TCA" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A4BFD372B2C34B200A8807E;
+			packageReferences = (
+				7A4BFD6D2B2C386F00A8807E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
+			productRefGroup = 7A4BFD412B2C34B300A8807E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A4BFD3F2B2C34B200A8807E /* AVPlayer_TCA */,
+				7A4BFD4F2B2C34B300A8807E /* AVPlayer_TCATests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A4BFD3E2B2C34B200A8807E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A4BFD4B2B2C34B300A8807E /* Preview Assets.xcassets in Resources */,
+				7A4BFD482B2C34B300A8807E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A4BFD4E2B2C34B300A8807E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A4BFD3C2B2C34B200A8807E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AD378C92B2DDC3E00523044 /* PlaybackTimelineControlFormatter.swift in Sources */,
+				7A4BFD462B2C34B300A8807E /* BookKeyPoints.swift in Sources */,
+				7AAF8EC32B2FD42300A90C72 /* AnimatedToggle.swift in Sources */,
+				7A4BFD442B2C34B300A8807E /* AVPlayer_TCAApp.swift in Sources */,
+				7AD378D52B2E204C00523044 /* BookInfo.swift in Sources */,
+				7AD378D12B2DEA4400523044 /* PlaybackTimelineControl.swift in Sources */,
+				7AD378B32B2CA9D200523044 /* PlaybackSwitchButonView.swift in Sources */,
+				7AD378E02B2F1B4500523044 /* AudioPlayerProvider.swift in Sources */,
+				7AD378C42B2DD32A00523044 /* LoopedSequence.swift in Sources */,
+				7AD378CD2B2DE4C300523044 /* PlaybackControlButtons.swift in Sources */,
+				7AD378B12B2CA9BA00523044 /* IconButtonView.swift in Sources */,
+				7AD378BF2B2DA85C00523044 /* TimeInterval+formatter.swift in Sources */,
+				7AD378D82B2E286000523044 /* BookInfoModel.swift in Sources */,
+				7AD378E52B2F557200523044 /* KeyPointAudioClient.swift in Sources */,
+				7A938C632B2F700900C4E538 /* BookClient.swift in Sources */,
+				7AD378D32B2DF46100523044 /* PlaybackControlButtonsView.swift in Sources */,
+				7AD378B52B2CA9ED00523044 /* PressEffectButtonStyle.swift in Sources */,
+				7AD378BD2B2D9AFB00523044 /* PlaybackTimelineControlView.swift in Sources */,
+				7AD378C22B2DD2D700523044 /* SpeedRateProvider.swift in Sources */,
+				7AD378E22B2F262600523044 /* AudioSessionManager.swift in Sources */,
+				7AD378B92B2CE58100523044 /* SliderView.swift in Sources */,
+				7AD378CF2B2DE77F00523044 /* BookKeyPointsView.swift in Sources */,
+				7A938C652B2FC6E000C4E538 /* ColorPalette.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A4BFD4C2B2C34B300A8807E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A4BFD552B2C34B300A8807E /* AVPlayer_TCATests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A4BFD522B2C34B300A8807E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A4BFD3F2B2C34B200A8807E /* AVPlayer_TCA */;
+			targetProxy = 7A4BFD512B2C34B300A8807E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7A4BFD622B2C34B300A8807E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7A4BFD632B2C34B300A8807E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A4BFD652B2C34B300A8807E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AVPlayer_TCA/Preview Content\"";
+				DEVELOPMENT_TEAM = GCCAR497KN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AVPlayer-TCA-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kv.AVPlayer-TCA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7A4BFD662B2C34B300A8807E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AVPlayer_TCA/Preview Content\"";
+				DEVELOPMENT_TEAM = GCCAR497KN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AVPlayer-TCA-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kv.AVPlayer-TCA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7A4BFD682B2C34B300A8807E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GCCAR497KN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kv.AVPlayer-TCATests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AVPlayer_TCA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AVPlayer_TCA";
+			};
+			name = Debug;
+		};
+		7A4BFD692B2C34B300A8807E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GCCAR497KN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kv.AVPlayer-TCATests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AVPlayer_TCA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AVPlayer_TCA";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A4BFD3B2B2C34B200A8807E /* Build configuration list for PBXProject "AVPlayer_TCA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A4BFD622B2C34B300A8807E /* Debug */,
+				7A4BFD632B2C34B300A8807E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A4BFD642B2C34B300A8807E /* Build configuration list for PBXNativeTarget "AVPlayer_TCA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A4BFD652B2C34B300A8807E /* Debug */,
+				7A4BFD662B2C34B300A8807E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A4BFD672B2C34B300A8807E /* Build configuration list for PBXNativeTarget "AVPlayer_TCATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A4BFD682B2C34B300A8807E /* Debug */,
+				7A4BFD692B2C34B300A8807E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7A4BFD6D2B2C386F00A8807E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = exactVersion;
+				version = 1.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7A4BFD6E2B2C386F00A8807E /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A4BFD6D2B2C386F00A8807E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7A4BFD382B2C34B200A8807E /* Project object */;
+}
